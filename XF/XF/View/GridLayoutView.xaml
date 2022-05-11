@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.View.GridLayoutView">
+    <ContentPage.Content>
+        <Grid RowDefinitions="*,50,50" ColumnDefinitions="50,*">
+            <BoxView Color="Red" Grid.Row="0" Grid.Column="0"></BoxView>
+            <BoxView Color="Lavender" Grid.Row="0" Grid.Column="1"></BoxView>
+
+            <BoxView Color="Gainsboro" Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView Color="Gold" Grid.Row="1" Grid.Column="1"></BoxView>
+
+            <BoxView Color="Tan" Grid.Row="2" Grid.Column="0"></BoxView>
+            <BoxView Color="Thistle" Grid.Row="2" Grid.Column="1"></BoxView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

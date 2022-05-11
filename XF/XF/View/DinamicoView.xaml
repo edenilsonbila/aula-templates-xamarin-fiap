@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.View.DinamicoView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="TextoAzul" TargetType="SearchBar">
+                <Setter Property="TextColor" Value="DarkGoldenrod"></Setter>
+            </Style>
+            <Style x:Key="TextoVermelho" TargetType="SearchBar">
+                <Setter Property="TextColor" Value="Red"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisa" Style="{DynamicResource TextoEstiloDinamico}" />
+            <Button Text="Button" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

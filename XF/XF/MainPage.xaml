@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.MainPage">
+
+    <StackLayout>
+        <Label Text="Layouts Simples" />
+        <Button Text="Stack Layout" Clicked="StackLayoutClicked" />
+        <Button Text="Grid Layout" Clicked="GridLayoutClicked" />
+        <Button Text="Flex Layout" Clicked="FlexLayoutClicked"/>
+
+        <Label Text="Layouts Complexos" />
+        <Button Text="Absolute Layout" Clicked="AbsoluteClicked" />
+        <Button Text="Relative Layout" Clicked="RelativeLayoutClicked"/>
+    </StackLayout>
+
+</ContentPage>

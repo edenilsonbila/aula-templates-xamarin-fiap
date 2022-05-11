@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.View.FlexLayoutView">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Explicito -->
+            <Style x:Key="BotaoTeste" TargetType="Button">
+                <Setter Property="TextColor" Value="AntiqueWhite"></Setter>
+                <Setter Property="BackgroundColor" Value="Wheat"></Setter>
+                <Setter Property="HeightRequest" Value="40"></Setter>
+            </Style>
+
+            <!-- Implicito -->
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Firebrick"></Setter>
+                <Setter Property="FontSize" Value="Large"></Setter>
+            </Style>
+
+            <!-- Herança -->
+            <Style x:Key="baseStyle" TargetType="View">
+                <Setter Property="HorizontalOptions" Value="Center"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   <ContentPage.Content>
+    <StackLayout>
+        <Button Text="Teste" Style="{StaticResource BotaoTeste}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
